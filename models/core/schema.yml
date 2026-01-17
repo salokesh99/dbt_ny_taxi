@@ -29,6 +29,9 @@ models:
       - name: trip_id
         data_type: string
         description: ""
+        tests:
+            - not_null:
+                severity: error
 
       - name: vendor_id
         data_type: int64
