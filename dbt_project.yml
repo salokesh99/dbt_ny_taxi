@@ -1,8 +1,8 @@
-name: 'taxi_rides_ny'
-version: '1.0.0'
+name: "taxi_rides_ny"
+version: "1.0.0"
 config-version: 2
 
-profile: 'taxi_rides_ny'
+profile: "taxi_rides_ny"
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -28,4 +28,7 @@ models:
       +materialized: table
 
 vars:
-  record_limit: 100000
+  record_limit: 100
+  is_test_run: true
+  payment_types: [1,2,3,4,5,6]
+
