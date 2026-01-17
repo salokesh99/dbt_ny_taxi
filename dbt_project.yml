@@ -30,4 +30,5 @@ models:
 vars:
   record_limit: 100
   is_test_run: true
+  payment_types: [1,2,3,4,5,6]
 

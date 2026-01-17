@@ -69,7 +69,7 @@ trips_union as (
      limit 100
 ),
 dim_zones as (
-    select * from {{ ref('taxi_zone_lookup') }} where borough != 'Unknown'
+    select * from {{ ref('dim_zones') }} where borough != 'Unknown'
 )
 
 select     
